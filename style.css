@@ -1,0 +1,73 @@
+body {
+    margin: 0;
+    padding: 0;
+}
+
+#map {
+    width: 100%;
+    height: 100vh; /* Full viewport height */
+}
+
+/* Style for the pool counter box */
+.pool-counter {
+    background-color: rgba(75, 97, 242, 0.9);
+    border: 2px solid #dedfe0;
+    border-radius: 8px;
+    width: 140px;  /* Fixed width to make the box square */
+    height: 140px; /* Fixed height to make the box square */
+    display: flex;  /* Flexbox to center content */
+    flex-direction: column;  /* Column layout */
+    align-items: center;  /* Center items horizontally */
+    justify-content: center;  /* Center items vertically */
+    box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.2);
+    font-family: Helvetica, Arial, sans-serif; /* Ensure Helvetica font is used */
+    padding: 30px; /* Added padding for margins */
+}
+
+/* Smaller text for description */
+.pool-counter span {
+    font-size: 32px; /* Smaller font size for the text */
+    color: #ffffff;  /* Text color */
+    align-items: center;
+    justify-content: center;
+    font-family: 'Courier New', Courier, monospace;
+    margin-bottom: 5px; /* Added margin below the text */
+}
+
+/* Larger text for the number */
+.pool-counter .count-number {
+    font-size: 120px; /* Increased font size for the number */
+    font-weight: bold; /* Bold font for emphasis */
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    color: hsl(0, 0%, 100%);  /* Number color */
+}
+
+/* Slider container styling */
+.slider-container {
+    position: absolute;
+    top: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: rgba(255, 255, 255, 0.9);
+    border: 2px solid #0073e6;
+    border-radius: 8px;
+    padding: 10px;
+    box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.2);
+    font-family: Helvetica, Arial, sans-serif;
+    z-index: 1000; /* Ensure it stays on top */
+}
+
+.slider-container label {
+    margin-right: 10px;
+    font-weight: bold;
+}
+
+#radius-slider {
+    width: 200px;
+    margin: 0 10px;
+}
+
+#radius-value {
+    font-weight: bold;
+}
+
